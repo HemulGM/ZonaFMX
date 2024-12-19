@@ -127,9 +127,11 @@ type
     procedure EditSearchEnter(Sender: TObject);
     procedure EditSearchExit(Sender: TObject);
     procedure VertScrollBoxViewResize(Sender: TObject);
+    procedure SearchEditButtonSearchClick(Sender: TObject);
   private
     FZonaAPI: TZonaAPI;
     FIsSerial: Boolean;
+    FSearch: string;
     FGenre: string;
     FYear: string;
     FOffset: Integer;
@@ -573,6 +575,7 @@ end;
 
 procedure TFormMain.OpenSearch(const Text: string);
 begin
+  FSearch := Text;
   TabControlMain.ActiveTab := TabItemSearch;
   ButtonBack.Visible := True;
   LabelSearch.Text := 'Поиск: "' + Text + '"';
@@ -640,6 +643,8 @@ procedure TFormMain.EditSearchChangeTracking(Sender: TObject);
 begin
   TimerSearch.Enabled := False;
   if EditSearch.Text.IsEmpty then
+    Exit;
+  if EditSearch.Text = FSearch then
     Exit;
   TimerSearch.Enabled := True;
 end;
@@ -929,6 +934,13 @@ begin
         Movies.Free;
       end;
     end);
+end;
+
+procedure TFormMain.SearchEditButtonSearchClick(Sender: TObject);
+begin
+  if EditSearch.Text.IsEmpty then
+    Exit;
+  OpenSearch(EditSearch.Text);
 end;
 
 procedure TFormMain.SkAnimatedImage1Click(Sender: TObject);
