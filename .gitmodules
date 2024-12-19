@@ -1,0 +1,9 @@
+[submodule "DelphiWinUI3"]
+	path = DelphiWinUI3
+	url = https://github.com/HemulGM/DelphiWinUI3
+[submodule "AsyncObjectHolder"]
+	path = AsyncObjectHolder
+	url = https://github.com/HemulGM/AsyncObjectHolder
+[submodule "ZonaAPI"]
+	path = ZonaAPI
+	url = https://github.com/HemulGM/ZonaAPI

@@ -1,0 +1,357 @@
+object FrameGenreRow: TFrameGenreRow
+  Size.Width = 959.000000000000000000
+  Size.Height = 330.000000000000000000
+  Size.PlatformDefault = False
+  OnPaint = FramePaint
+  object LayoutGenres: TLayout
+    Align = Top
+    Margins.Left = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Size.Width = 949.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object ButtonScrollFilterLeft: TButton
+      Align = Right
+      Margins.Top = 6.000000000000000000
+      Margins.Bottom = 6.000000000000000000
+      Position.X = 885.000000000000000000
+      Position.Y = 6.000000000000000000
+      Size.Width = 28.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'buttonstyle_spin_left'
+      TabOrder = 1
+      Text = 'ButtonScrollFilterLeft'
+      TextSettings.Trimming = None
+      OnClick = ButtonScrollFilterLeftClick
+    end
+    object ButtonScrollFilterRight: TButton
+      Align = MostRight
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 6.000000000000000000
+      Margins.Bottom = 6.000000000000000000
+      Position.X = 921.000000000000000000
+      Position.Y = 6.000000000000000000
+      Size.Width = 28.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'buttonstyle_spin_right'
+      TabOrder = 0
+      Text = 'Button291'
+      TextSettings.Trimming = None
+      OnClick = ButtonScrollFilterRightClick
+    end
+    object ButtonOpen: TButton
+      Align = Left
+      Size.Width = 170.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'buttonstyle_hyperlink_caption'
+      TabOrder = 2
+      Text = #1050#1086#1084#1077#1076#1080#1080
+      TextSettings.Trimming = None
+      OnApplyStyleLookup = ButtonOpenApplyStyleLookup
+      OnClick = ButtonOpenClick
+    end
+  end
+  object HorzScrollBoxItems: THorzScrollBox
+    Align = Client
+    Size.Width = 959.000000000000000000
+    Size.Height = 280.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    DisableMouseWheel = True
+    ShowScrollBars = False
+    OnViewportPositionChange = HorzScrollBoxItemsViewportPositionChange
+    Viewport.Width = 959.000000000000000000
+    Viewport.Height = 280.000000000000000000
+    inline FrameMovie1: TFrameMovie
+      Align = Left
+      Margins.Left = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Size.Width = 170.000000000000000000
+      Size.Height = 280.000000000000000000
+      Size.PlatformDefault = False
+      inherited LayoutContent: TLayout
+        inherited LayoutInfo: TLayout
+          inherited LabelName: TLabel
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+          end
+        end
+        inherited RectangleBG: TRectangle
+          Size.Width = 170.000000000000000000
+          Size.Height = 222.000000000000000000
+        end
+        inherited RectangleAdult: TRectangle
+          Position.X = 112.000000000000000000
+        end
+      end
+    end
+    inline FrameMovie2: TFrameMovie
+      Align = Left
+      Margins.Left = 10.000000000000000000
+      Position.X = 190.000000000000000000
+      Size.Width = 170.000000000000000000
+      Size.Height = 280.000000000000000000
+      Size.PlatformDefault = False
+      inherited LayoutContent: TLayout
+        inherited LayoutInfo: TLayout
+          inherited LabelName: TLabel
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+          end
+        end
+        inherited RectangleBG: TRectangle
+          Size.Width = 170.000000000000000000
+          Size.Height = 222.000000000000000000
+        end
+        inherited RectangleAdult: TRectangle
+          Position.X = 112.000000000000000000
+        end
+      end
+    end
+    inline FrameMovie3: TFrameMovie
+      Align = Left
+      Margins.Left = 10.000000000000000000
+      Position.X = 2170.000000000000000000
+      Size.Width = 170.000000000000000000
+      Size.Height = 280.000000000000000000
+      Size.PlatformDefault = False
+      inherited LayoutContent: TLayout
+        inherited LayoutInfo: TLayout
+          inherited LabelName: TLabel
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+          end
+        end
+        inherited RectangleBG: TRectangle
+          Size.Width = 170.000000000000000000
+          Size.Height = 222.000000000000000000
+        end
+        inherited RectangleAdult: TRectangle
+          Position.X = 112.000000000000000000
+        end
+      end
+    end
+    inline FrameMovie4: TFrameMovie
+      Align = Left
+      Margins.Left = 10.000000000000000000
+      Position.X = 1990.000000000000000000
+      Size.Width = 170.000000000000000000
+      Size.Height = 280.000000000000000000
+      Size.PlatformDefault = False
+      inherited LayoutContent: TLayout
+        inherited LayoutInfo: TLayout
+          inherited LabelName: TLabel
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+          end
+        end
+        inherited RectangleBG: TRectangle
+          Size.Width = 170.000000000000000000
+          Size.Height = 222.000000000000000000
+        end
+        inherited RectangleAdult: TRectangle
+          Position.X = 112.000000000000000000
+        end
+      end
+    end
+    inline FrameMovie5: TFrameMovie
+      Align = Left
+      Margins.Left = 10.000000000000000000
+      Position.X = 1810.000000000000000000
+      Size.Width = 170.000000000000000000
+      Size.Height = 280.000000000000000000
+      Size.PlatformDefault = False
+      inherited LayoutContent: TLayout
+        inherited LayoutInfo: TLayout
+          inherited LabelName: TLabel
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+          end
+        end
+        inherited RectangleBG: TRectangle
+          Size.Width = 170.000000000000000000
+          Size.Height = 222.000000000000000000
+        end
+        inherited RectangleAdult: TRectangle
+          Position.X = 112.000000000000000000
+        end
+      end
+    end
+    inline FrameMovie6: TFrameMovie
+      Align = Left
+      Margins.Left = 10.000000000000000000
+      Position.X = 370.000000000000000000
+      Size.Width = 170.000000000000000000
+      Size.Height = 280.000000000000000000
+      Size.PlatformDefault = False
+      inherited LayoutContent: TLayout
+        inherited LayoutInfo: TLayout
+          inherited LabelName: TLabel
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+          end
+        end
+        inherited RectangleBG: TRectangle
+          Size.Width = 170.000000000000000000
+          Size.Height = 222.000000000000000000
+        end
+        inherited RectangleAdult: TRectangle
+          Position.X = 112.000000000000000000
+        end
+      end
+    end
+    inline FrameMovie7: TFrameMovie
+      Align = Left
+      Margins.Left = 10.000000000000000000
+      Position.X = 1630.000000000000000000
+      Size.Width = 170.000000000000000000
+      Size.Height = 280.000000000000000000
+      Size.PlatformDefault = False
+      inherited LayoutContent: TLayout
+        inherited LayoutInfo: TLayout
+          inherited LabelName: TLabel
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+          end
+        end
+        inherited RectangleBG: TRectangle
+          Size.Width = 170.000000000000000000
+          Size.Height = 222.000000000000000000
+        end
+        inherited RectangleAdult: TRectangle
+          Position.X = 112.000000000000000000
+        end
+      end
+    end
+    inline FrameMovie8: TFrameMovie
+      Align = Left
+      Margins.Left = 10.000000000000000000
+      Position.X = 1450.000000000000000000
+      Size.Width = 170.000000000000000000
+      Size.Height = 280.000000000000000000
+      Size.PlatformDefault = False
+      inherited LayoutContent: TLayout
+        inherited LayoutInfo: TLayout
+          inherited LabelName: TLabel
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+          end
+        end
+        inherited RectangleBG: TRectangle
+          Size.Width = 170.000000000000000000
+          Size.Height = 222.000000000000000000
+        end
+        inherited RectangleAdult: TRectangle
+          Position.X = 112.000000000000000000
+        end
+      end
+    end
+    inline FrameMovie9: TFrameMovie
+      Align = Left
+      Margins.Left = 10.000000000000000000
+      Position.X = 1270.000000000000000000
+      Size.Width = 170.000000000000000000
+      Size.Height = 280.000000000000000000
+      Size.PlatformDefault = False
+      inherited LayoutContent: TLayout
+        inherited LayoutInfo: TLayout
+          inherited LabelName: TLabel
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+          end
+        end
+        inherited RectangleBG: TRectangle
+          Size.Width = 170.000000000000000000
+          Size.Height = 222.000000000000000000
+        end
+        inherited RectangleAdult: TRectangle
+          Position.X = 112.000000000000000000
+        end
+      end
+    end
+    inline FrameMovie10: TFrameMovie
+      Align = Left
+      Margins.Left = 10.000000000000000000
+      Position.X = 1090.000000000000000000
+      Size.Width = 170.000000000000000000
+      Size.Height = 280.000000000000000000
+      Size.PlatformDefault = False
+      inherited LayoutContent: TLayout
+        inherited LayoutInfo: TLayout
+          inherited LabelName: TLabel
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+          end
+        end
+        inherited RectangleBG: TRectangle
+          Size.Width = 170.000000000000000000
+          Size.Height = 222.000000000000000000
+        end
+        inherited RectangleAdult: TRectangle
+          Position.X = 112.000000000000000000
+        end
+      end
+    end
+    inline FrameMovie11: TFrameMovie
+      Align = Left
+      Margins.Left = 10.000000000000000000
+      Position.X = 910.000000000000000000
+      Size.Width = 170.000000000000000000
+      Size.Height = 280.000000000000000000
+      Size.PlatformDefault = False
+      inherited LayoutContent: TLayout
+        inherited LayoutInfo: TLayout
+          inherited LabelName: TLabel
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+          end
+        end
+        inherited RectangleBG: TRectangle
+          Size.Width = 170.000000000000000000
+          Size.Height = 222.000000000000000000
+        end
+        inherited RectangleAdult: TRectangle
+          Position.X = 112.000000000000000000
+        end
+      end
+    end
+    inline FrameMovie12: TFrameMovie
+      Align = Left
+      Margins.Left = 10.000000000000000000
+      Position.X = 730.000000000000000000
+      Size.Width = 170.000000000000000000
+      Size.Height = 280.000000000000000000
+      Size.PlatformDefault = False
+      inherited LayoutContent: TLayout
+        inherited LayoutInfo: TLayout
+          inherited LabelName: TLabel
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+          end
+        end
+        inherited RectangleBG: TRectangle
+          Size.Width = 170.000000000000000000
+          Size.Height = 222.000000000000000000
+        end
+        inherited RectangleAdult: TRectangle
+          Position.X = 112.000000000000000000
+        end
+      end
+    end
+    inline FrameMovie13: TFrameMovie
+      Align = Left
+      Margins.Left = 10.000000000000000000
+      Position.X = 550.000000000000000000
+      Size.Width = 170.000000000000000000
+      Size.Height = 280.000000000000000000
+      Size.PlatformDefault = False
+      inherited LayoutContent: TLayout
+        inherited LayoutInfo: TLayout
+          inherited LabelName: TLabel
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+          end
+        end
+        inherited RectangleBG: TRectangle
+          Size.Width = 170.000000000000000000
+          Size.Height = 222.000000000000000000
+        end
+        inherited RectangleAdult: TRectangle
+          Position.X = 112.000000000000000000
+        end
+      end
+    end
+  end
+end

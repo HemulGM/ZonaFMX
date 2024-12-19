@@ -1,0 +1,241 @@
+object FrameMovie: TFrameMovie
+  Size.Width = 170.000000000000000000
+  Size.Height = 280.000000000000000000
+  Size.PlatformDefault = False
+  object RectangleOver: TRectangle
+    Align = Contents
+    Fill.Color = x32000000
+    HitTest = False
+    Opacity = 0.000000000000000000
+    Size.Width = 170.000000000000000000
+    Size.Height = 280.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    XRadius = 4.000000000000000000
+    YRadius = 4.000000000000000000
+  end
+  object LayoutContent: TLayout
+    Align = Client
+    Margins.Left = 4.000000000000000000
+    Margins.Top = 4.000000000000000000
+    Margins.Right = 4.000000000000000000
+    Margins.Bottom = 4.000000000000000000
+    Size.Width = 162.000000000000000000
+    Size.Height = 272.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object CheckBox: TCheckBox
+      StyleName = 'check'
+      CanFocus = False
+      DisableFocusEffect = True
+      Margins.Top = 8.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 24.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'checkboxstyle_listitem'
+      TabOrder = 4
+      Text = 'CheckBox'
+      Visible = False
+    end
+    object ImageData: TImage
+      StyleName = 'icon'
+      MultiResBitmap = <
+        item
+        end>
+      Align = Client
+      ClipChildren = True
+      HitTest = False
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 162.000000000000000000
+      Size.Height = 214.000000000000000000
+      Size.PlatformDefault = False
+      WrapMode = Place
+    end
+    object LayoutInfo: TLayout
+      StyleName = 'content'
+      Align = Bottom
+      Position.Y = 224.000000000000000000
+      Size.Width = 162.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      object LabelYear: TLabel
+        StyleName = 'detail'
+        Align = Client
+        Opacity = 0.800000011920929000
+        Size.Width = 119.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = claWhite
+        TextSettings.WordWrap = False
+        Text = '2024'
+      end
+      object LabelName: TLabel
+        StyleName = 'text'
+        Align = Top
+        StyledSettings = [Family, Style, FontColor]
+        HitTest = True
+        Margins.Bottom = 4.000000000000000000
+        Size.Width = 162.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.FontColor = claWhite
+        TextSettings.WordWrap = False
+        Text = 'Text'
+        OnClick = LabelNameClick
+      end
+      object LayoutStar: TLayout
+        StyleName = 'Layout1Style'
+        Align = Left
+        Margins.Right = 2.000000000000000000
+        Position.Y = 26.000000000000000000
+        Size.Width = 14.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object PathStar: TPath
+          StyleName = 'Path1Style'
+          Align = Center
+          Data.Path = {
+            29000000000000003F35E640C976064002000000E53FED4014E1D33F02000000
+            0D85FE402577BC3F0200000016640641BEA1D83F02000000AE3A0941A3D7E33F
+            02000000D4860B41D438F63F0200000091ED0C41C97606400100000095432541
+            23DBA5400100000014AE5B412DB2B540020000002C8D634172F7B74002000000
+            1E036941C591C640020000007BE06741F44FD64002000000A26C67416596DC40
+            02000000F9F265417E63E2400200000014AE6341E5D0E64001000000BA493C41
+            C0CA19410100000081954541E7FB4F410200000076EE464168D2574102000000
+            82AB4141A5445F410200000000D539419A9D60410200000030B536411B276141
+            020000005B7E3341D6A460410200000021B03041012B5F410100000019040041
+            679145410100000022B09E40012B5F4102000000789C9040E1DE624102000000
+            A2647E409C2A60410200000024956F40C620594102000000D1AD69408C525641
+            02000000C0A46740B61B534102000000C3CA6940E6FB4F4101000000BE748740
+            BFCA194101000000B0F1E23FB1C8E640020000009474B53FD0A9DB4002000000
+            C2A3B43FE86DC94002000000461FE13FA10EBE40020000000DC4F23FE48BB940
+            0200000049EC0440E29BB64002000000766811402AB2B540010000000881B540
+            20DBA540030000003F35E640C9760640}
+          Fill.Color = xFFFFAB20
+          HitTest = False
+          Size.Width = 14.000000000000000000
+          Size.Height = 14.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          WrapMode = Fit
+        end
+      end
+      object LineSep: TLine
+        StyleName = 'line'
+        Align = Left
+        HitTest = False
+        LineType = Right
+        Opacity = 0.600000023841857900
+        Margins.Left = 4.000000000000000000
+        Margins.Top = 6.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Position.X = 38.000000000000000000
+        Position.Y = 32.000000000000000000
+        Size.Width = 1.000000000000000000
+        Size.Height = 12.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Color = claWhite
+      end
+      object LabelScore: TLabel
+        StyleName = 'score'
+        Align = Left
+        AutoSize = True
+        Opacity = 0.800000011920929000
+        Margins.Left = 2.000000000000000000
+        Position.X = 18.000000000000000000
+        Position.Y = 26.000000000000000000
+        Size.Width = 16.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.FontColor = claWhite
+        TextSettings.WordWrap = False
+        Text = '6.0'
+      end
+    end
+    object RectangleBG: TRectangle
+      Align = Client
+      Fill.Color = x78000000
+      HitTest = False
+      Margins.Bottom = 10.000000000000000000
+      Size.Width = 162.000000000000000000
+      Size.Height = 214.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      Visible = False
+      object Path1: TPath
+        Align = Center
+        Data.Path = {
+          3F00000000000000EE7C53413BDF874001000000B4C8E240B29DC74002000000
+          8E7BE0402F1AC9400200000095D6DD4005F9C94002000000A01ADB40DE24CA40
+          0100000046B697400000E04001000000000058410000E04002000000146B5C41
+          0000E0400200000000006041D729E74002000000000060410000F04001000000
+          0000604100004841020000000000604165175E410200000065174E4100007041
+          020000000000384100007041010000000000904000007041020000006AA24740
+          00007041020000000000004065175E4102000000000000400000484101000000
+          000000400000F0400200000000000040A69BEC4002000000AC1C0240A470E940
+          020000008FC20540E5D0E640010000005C8FF23F508DD340020000001CF6BB3F
+          CF88A94002000000D1F70B4032D07840020000000100604007815D4001000000
+          13832241DE24A63F020000005385374134175F3F02000000AF154E412085CB3F
+          020000007AE95441C1CA394001000000C09F58418C6C6740020000002FFD5941
+          273B7840020000008CB057411E24854002000000F07C53413CDF874000000000
+          84951741EA268D4001000000E0242C410BD70B4002000000168D2A4150930C40
+          0200000007FB284199F20D4002000000C07427419DEF0F40010000003B891341
+          C0CA2940010000005337FD4042609D400300000084951741EA268D4000000000
+          D64D3C41E4A51B4001000000EAFB3B4119041E4001000000EE512E416BBC7C40
+          0100000094ED46416BBC5C400100000030B2454169914D4002000000640B4441
+          61343940020000001ABD404138A2274002000000D64D3C41E4A51B4000000000
+          6E91F9402A5C474001000000E9A5C740DACE6740010000008FC29D404E62BC40
+          0100000014AECF40F628AC40030000006E91F9402A5C4740000000006F123B40
+          AE47D14001000000D8A360403333CB4001000000DE249A4020B0824001000000
+          AAC673401A2F8D40020000005A5B41407360954002000000B2C325401474B040
+          02000000E0243640FBA9C940030000006F123B40AE47D140}
+        Fill.Color = x32FFFFFF
+        HitTest = False
+        Size.Width = 50.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        WrapMode = Fit
+      end
+    end
+    object RectangleAdult: TRectangle
+      Anchors = [akTop, akRight]
+      Fill.Color = claBlack
+      HitTest = False
+      Position.X = 104.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 50.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      Visible = False
+      XRadius = 4.000000000000000000
+      YRadius = 4.000000000000000000
+      object Label1: TLabel
+        Align = Client
+        Size.Width = 50.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Center
+        TextSettings.WordWrap = False
+        Text = '18+'
+        TabOrder = 0
+      end
+    end
+  end
+  object FloatAnimationOverBG: TFloatAnimation
+    Duration = 0.200000002980232200
+    PropertyName = 'RectangleOver.Opacity'
+    StartValue = 0.000000000000000000
+    StopValue = 1.000000000000000000
+    Trigger = 'IsMouseOver=true'
+    TriggerInverse = 'IsMouseOver=false'
+  end
+end

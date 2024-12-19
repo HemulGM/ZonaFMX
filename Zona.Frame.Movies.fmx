@@ -1,0 +1,185 @@
+object FrameMovies: TFrameMovies
+  Size.Width = 1129.000000000000000000
+  Size.Height = 719.000000000000000000
+  Size.PlatformDefault = False
+  object LayoutPaging: TLayout
+    Align = Bottom
+    Margins.Top = 10.000000000000000000
+    Position.Y = 687.000000000000000000
+    Size.Width = 1129.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    OnResize = LayoutPagingResize
+    OnResized = LayoutPagingResize
+    object LayoutPages: TLayout
+      Align = HorzCenter
+      Position.X = 364.000000000000000000
+      Size.Width = 400.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object ButtonPagesLeft: TButton
+        Align = Left
+        Margins.Right = 8.000000000000000000
+        Size.Width = 32.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'scrolllefttoolbutton'
+        TabOrder = 2
+        Text = 'ButtonScrollFilterLeft'
+        TextSettings.Trimming = None
+        OnClick = ButtonPagesLeftClick
+      end
+      object ButtonPagesRight: TButton
+        Align = Right
+        Margins.Left = 8.000000000000000000
+        Position.X = 368.000000000000000000
+        Size.Width = 32.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'scrollrighttoolbutton'
+        TabOrder = 1
+        Text = 'Button291'
+        TextSettings.Trimming = None
+        OnClick = ButtonPagesRightClick
+      end
+      object HorzScrollBoxPages: THorzScrollBox
+        Align = Client
+        Size.Width = 320.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ShowScrollBars = False
+        OnViewportPositionChange = HorzScrollBoxPagesViewportPositionChange
+        Viewport.Width = 320.000000000000000000
+        Viewport.Height = 32.000000000000000000
+        object RadioButton1: TRadioButton
+          Align = Left
+          GroupName = 'pages'
+          IsChecked = True
+          Margins.Right = 4.000000000000000000
+          Size.Width = 32.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'radiobuttonstyle_filter'
+          TabOrder = 6
+          Text = '1'
+          TextSettings.HorzAlign = Center
+        end
+        object RadioButton2: TRadioButton
+          Align = Left
+          GroupName = 'pages'
+          Margins.Right = 4.000000000000000000
+          Position.X = 72.000000000000000000
+          Size.Width = 32.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'radiobuttonstyle_filter'
+          TabOrder = 5
+          Text = '3'
+          TextSettings.HorzAlign = Center
+        end
+        object RadioButton3: TRadioButton
+          Align = Left
+          GroupName = 'pages'
+          Margins.Right = 4.000000000000000000
+          Position.X = 36.000000000000000000
+          Size.Width = 32.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'radiobuttonstyle_filter'
+          TabOrder = 0
+          Text = '2'
+          TextSettings.HorzAlign = Center
+        end
+        object RadioButton11: TRadioButton
+          Align = Left
+          GroupName = 'pages'
+          Margins.Right = 4.000000000000000000
+          Position.X = 108.000000000000000000
+          Size.Width = 32.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'radiobuttonstyle_filter'
+          TabOrder = 4
+          Text = '4'
+          TextSettings.HorzAlign = Center
+        end
+        object RadioButton12: TRadioButton
+          Align = Left
+          GroupName = 'pages'
+          Margins.Right = 4.000000000000000000
+          Position.X = 144.000000000000000000
+          Size.Width = 32.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'radiobuttonstyle_filter'
+          TabOrder = 3
+          Text = '5'
+          TextSettings.HorzAlign = Center
+        end
+        object RadioButton13: TRadioButton
+          Align = Left
+          GroupName = 'pages'
+          Margins.Right = 4.000000000000000000
+          Position.X = 180.000000000000000000
+          Size.Width = 32.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'radiobuttonstyle_filter'
+          TabOrder = 2
+          Text = '6'
+          TextSettings.HorzAlign = Center
+        end
+        object RadioButton14: TRadioButton
+          Align = Left
+          GroupName = 'pages'
+          Margins.Right = 4.000000000000000000
+          Position.X = 216.000000000000000000
+          Size.Width = 32.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'radiobuttonstyle_filter'
+          TabOrder = 1
+          Text = '7'
+          TextSettings.HorzAlign = Center
+        end
+      end
+    end
+  end
+  object VertScrollBoxItems: TVertScrollBox
+    Align = Client
+    ClipChildren = True
+    Size.Width = 1129.000000000000000000
+    Size.Height = 677.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    OnResize = VertScrollBoxItemsResize
+    OnResized = VertScrollBoxItemsResize
+    Viewport.Width = 1129.000000000000000000
+    Viewport.Height = 677.000000000000000000
+  end
+  object LayoutItemsOver: TLayout
+    Align = Client
+    Size.Width = 1129.000000000000000000
+    Size.Height = 677.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    object LabelNothingFound: TLabel
+      Align = Top
+      AutoSize = True
+      Margins.Top = 20.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 1165.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'labelstyle_bodystrong'
+      TextSettings.HorzAlign = Center
+      TextSettings.WordWrap = False
+      Text = #1053#1080#1095#1077#1075#1086' '#1085#1077' '#1085#1072#1081#1076#1077#1085#1086
+      Visible = False
+      TabOrder = 0
+    end
+  end
+end

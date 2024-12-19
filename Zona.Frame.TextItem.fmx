@@ -1,0 +1,50 @@
+object FrameTextItem: TFrameTextItem
+  ClipChildren = True
+  Size.Width = 346.000000000000000000
+  Size.Height = 122.000000000000000000
+  Size.PlatformDefault = False
+  OnResize = FrameResize
+  OnResized = FrameResize
+  object LayoutValue: TLayout
+    Align = Client
+    Size.Width = 262.000000000000000000
+    Size.Height = 122.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object LabelValue: TLabel
+      Align = Top
+      AutoSize = True
+      Size.Width = 262.000000000000000000
+      Size.Height = 94.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'labelstyle_bodystrong'
+      TextSettings.VertAlign = Leading
+      Text = 
+        #1051#1080#1074#1077#1085' '#1056#1072#1084#1073#1080#1085', '#1044#1078#1077#1081#1082' '#1052#1072#1082#1051#1072#1092#1083#1080#1085', '#1044#1080' '#1059#1086#1083#1083#1077#1089'-'#1057#1090#1086#1091#1085', '#1064#1077#1081#1085' '#1059#1101#1089#1090', Sohvi' +
+        ' Rodriguez, '#1044#1078#1077#1082#1089#1086#1085' '#1044#1101#1074#1080#1089', '#1050#1101#1090#1080' '#1050#1080#1085', Gina Presciti White, Ariel ' +
+        'Paredes, '#1052#1072#1081#1082' '#1057#1090#1101#1085#1083#1080
+      TabOrder = 0
+      OnApplyStyleLookup = LabelValueResize
+      OnResize = LabelValueResize
+      OnResized = LabelValueResize
+    end
+  end
+  object LayoutName: TLayout
+    Align = Left
+    Size.Width = 84.000000000000000000
+    Size.Height = 122.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object LabelName: TLabel
+      Align = Top
+      AutoSize = True
+      Opacity = 0.800000011920929000
+      Size.Width = 84.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.VertAlign = Leading
+      Text = #1040#1082#1090#1105#1088#1099
+      TabOrder = 1
+    end
+  end
+end
